@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\sae-semestre-2\\formconnexionadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formconnexionadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\sae-semestre-2\\formitineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\nsitb\\source\\repos\\sae-semestre-2\\sae-semestre-2\\formitineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formitineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\sae-semestre-2\\formconsultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formconsultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\sae-semestre-2\\formsupprimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formsupprimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\sae-semestre-2\\formajouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formajouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\sae-semestre-2\\formmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,32 +53,60 @@
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormConnexionAdmin.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormConnexionAdmin.cs",
-              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormConnexionAdmin.cs",
-              "ToolTip": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormConnexionAdmin.cs [Conception]",
-              "RelativeToolTip": "SAE-Semestre-2\\FormConnexionAdmin.cs [Conception]",
+              "DocumentIndex": 3,
+              "Title": "FormAjouter.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouter.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormAjouter.cs",
+              "ToolTip": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouter.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormAjouter.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T13:23:18.467Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-05-16T13:25:15.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormModifier.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifier.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormModifier.cs",
+              "ToolTip": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifier.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormModifier.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:25:28.179Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FormSupprimer.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormSupprimer.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormSupprimer.cs",
+              "ToolTip": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormSupprimer.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormSupprimer.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T14:02:28.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormConsultation.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs",
               "RelativeDocumentMoniker": "SAE-Semestre-2\\FormConsultation.cs",
               "ToolTip": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs [Conception]",
               "RelativeToolTip": "SAE-Semestre-2\\FormConsultation.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T13:22:54.176Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-05-16T13:22:54.176Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormItineraire.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormItineraire.cs",
               "RelativeDocumentMoniker": "SAE-Semestre-2\\FormItineraire.cs",

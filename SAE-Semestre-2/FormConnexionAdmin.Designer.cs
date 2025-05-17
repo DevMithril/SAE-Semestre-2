@@ -31,6 +31,12 @@
             btnConnexionAdmin = new Button();
             btnConsultation = new Button();
             btnItineraire = new Button();
+            lblConnexionTitre = new Label();
+            lblLoginAdmin = new Label();
+            lblPasswordAdmin = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            btnConnexion = new Button();
             SuspendLayout();
             // 
             // btnConnexionAdmin
@@ -60,17 +66,75 @@
             btnItineraire.Text = "Trouver un itinéraire";
             btnItineraire.UseVisualStyleBackColor = true;
             // 
+            // lblConnexionTitre
+            // 
+            lblConnexionTitre.AutoSize = true;
+            lblConnexionTitre.Font = new Font("Segoe UI", 26F, FontStyle.Bold);
+            lblConnexionTitre.Location = new Point(246, 85);
+            lblConnexionTitre.Name = "lblConnexionTitre";
+            lblConnexionTitre.Size = new Size(315, 47);
+            lblConnexionTitre.TabIndex = 6;
+            lblConnexionTitre.Text = "Connexion Admin";
+            // 
+            // lblLoginAdmin
+            // 
+            lblLoginAdmin.AutoSize = true;
+            lblLoginAdmin.Location = new Point(277, 174);
+            lblLoginAdmin.Name = "lblLoginAdmin";
+            lblLoginAdmin.Size = new Size(61, 15);
+            lblLoginAdmin.TabIndex = 7;
+            lblLoginAdmin.Text = "Identifiant";
+            // 
+            // lblPasswordAdmin
+            // 
+            lblPasswordAdmin.AutoSize = true;
+            lblPasswordAdmin.Location = new Point(277, 235);
+            lblPasswordAdmin.Name = "lblPasswordAdmin";
+            lblPasswordAdmin.Size = new Size(77, 15);
+            lblPasswordAdmin.TabIndex = 8;
+            lblPasswordAdmin.Text = "Mot de passe";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(277, 192);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(254, 23);
+            textBox1.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(277, 253);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(254, 23);
+            textBox2.TabIndex = 10;
+            // 
+            // btnConnexion
+            // 
+            btnConnexion.Location = new Point(347, 308);
+            btnConnexion.Name = "btnConnexion";
+            btnConnexion.Size = new Size(102, 23);
+            btnConnexion.TabIndex = 11;
+            btnConnexion.Text = "Se Connecter";
+            btnConnexion.UseVisualStyleBackColor = true;
+            // 
             // FormConnexionAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnConnexion);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(lblPasswordAdmin);
+            Controls.Add(lblLoginAdmin);
+            Controls.Add(lblConnexionTitre);
             Controls.Add(btnConnexionAdmin);
             Controls.Add(btnConsultation);
             Controls.Add(btnItineraire);
             Name = "FormConnexionAdmin";
             Text = "FormConnexionAdmin";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -78,5 +142,11 @@
         private Button btnConnexionAdmin;
         private Button btnConsultation;
         private Button btnItineraire;
+        private Label lblConnexionTitre;
+        private Label lblLoginAdmin;
+        private Label lblPasswordAdmin;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Button btnConnexion;
     }
 }
