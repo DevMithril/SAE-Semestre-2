@@ -31,6 +31,11 @@
             btnConnexionAdmin = new Button();
             btnConsultation = new Button();
             btnItineraire = new Button();
+            btnAjouter = new Button();
+            btnModifier = new Button();
+            btnSupprimer = new Button();
+            btnAjouterLigne = new Button();
+            btnAjouterStation = new Button();
             SuspendLayout();
             // 
             // btnConnexionAdmin
@@ -60,11 +65,61 @@
             btnItineraire.Text = "Trouver un itinéraire";
             btnItineraire.UseVisualStyleBackColor = true;
             // 
+            // btnAjouter
+            // 
+            btnAjouter.Location = new Point(287, 395);
+            btnAjouter.Name = "btnAjouter";
+            btnAjouter.Size = new Size(75, 23);
+            btnAjouter.TabIndex = 9;
+            btnAjouter.Text = "Ajouter";
+            btnAjouter.UseVisualStyleBackColor = true;
+            // 
+            // btnModifier
+            // 
+            btnModifier.Location = new Point(368, 395);
+            btnModifier.Name = "btnModifier";
+            btnModifier.Size = new Size(75, 23);
+            btnModifier.TabIndex = 10;
+            btnModifier.Text = "Modifier";
+            btnModifier.UseVisualStyleBackColor = true;
+            // 
+            // btnSupprimer
+            // 
+            btnSupprimer.Location = new Point(449, 395);
+            btnSupprimer.Name = "btnSupprimer";
+            btnSupprimer.Size = new Size(75, 23);
+            btnSupprimer.TabIndex = 11;
+            btnSupprimer.Text = "Supprimer";
+            btnSupprimer.UseVisualStyleBackColor = true;
+            // 
+            // btnAjouterLigne
+            // 
+            btnAjouterLigne.Location = new Point(336, 164);
+            btnAjouterLigne.Name = "btnAjouterLigne";
+            btnAjouterLigne.Size = new Size(140, 23);
+            btnAjouterLigne.TabIndex = 12;
+            btnAjouterLigne.Text = "Ajouter une ligne";
+            btnAjouterLigne.UseVisualStyleBackColor = true;
+            // 
+            // btnAjouterStation
+            // 
+            btnAjouterStation.Location = new Point(336, 267);
+            btnAjouterStation.Name = "btnAjouterStation";
+            btnAjouterStation.Size = new Size(140, 23);
+            btnAjouterStation.TabIndex = 13;
+            btnAjouterStation.Text = "Ajouter une Station";
+            btnAjouterStation.UseVisualStyleBackColor = true;
+            // 
             // FormAjouter
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAjouterStation);
+            Controls.Add(btnAjouterLigne);
+            Controls.Add(btnSupprimer);
+            Controls.Add(btnModifier);
+            Controls.Add(btnAjouter);
             Controls.Add(btnConnexionAdmin);
             Controls.Add(btnConsultation);
             Controls.Add(btnItineraire);
@@ -78,5 +133,10 @@
         private Button btnConnexionAdmin;
         private Button btnConsultation;
         private Button btnItineraire;
+        private Button btnAjouter;
+        private Button btnModifier;
+        private Button btnSupprimer;
+        private Button btnAjouterLigne;
+        private Button btnAjouterStation;
     }
 }

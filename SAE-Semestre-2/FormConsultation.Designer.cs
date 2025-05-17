@@ -31,6 +31,9 @@
             btnConnexionAdmin = new Button();
             btnConsultation = new Button();
             btnItineraire = new Button();
+            cbxLigneConsult = new ComboBox();
+            cbxStationConsult = new ComboBox();
+            lstHorairesConsult = new ListBox();
             SuspendLayout();
             // 
             // btnConnexionAdmin
@@ -60,11 +63,39 @@
             btnItineraire.Text = "Trouver un itinéraire";
             btnItineraire.UseVisualStyleBackColor = true;
             // 
+            // cbxLigneConsult
+            // 
+            cbxLigneConsult.FormattingEnabled = true;
+            cbxLigneConsult.Location = new Point(43, 181);
+            cbxLigneConsult.Name = "cbxLigneConsult";
+            cbxLigneConsult.Size = new Size(366, 23);
+            cbxLigneConsult.TabIndex = 6;
+            // 
+            // cbxStationConsult
+            // 
+            cbxStationConsult.FormattingEnabled = true;
+            cbxStationConsult.Location = new Point(43, 283);
+            cbxStationConsult.Name = "cbxStationConsult";
+            cbxStationConsult.Size = new Size(366, 23);
+            cbxStationConsult.TabIndex = 7;
+            // 
+            // lstHorairesConsult
+            // 
+            lstHorairesConsult.FormattingEnabled = true;
+            lstHorairesConsult.ItemHeight = 15;
+            lstHorairesConsult.Location = new Point(479, 99);
+            lstHorairesConsult.Name = "lstHorairesConsult";
+            lstHorairesConsult.Size = new Size(273, 334);
+            lstHorairesConsult.TabIndex = 8;
+            // 
             // FormConsultation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lstHorairesConsult);
+            Controls.Add(cbxStationConsult);
+            Controls.Add(cbxLigneConsult);
             Controls.Add(btnConnexionAdmin);
             Controls.Add(btnConsultation);
             Controls.Add(btnItineraire);
@@ -78,5 +109,8 @@
         private Button btnConnexionAdmin;
         private Button btnConsultation;
         private Button btnItineraire;
+        private ComboBox cbxLigneConsult;
+        private ComboBox cbxStationConsult;
+        private ListBox lstHorairesConsult;
     }
 }

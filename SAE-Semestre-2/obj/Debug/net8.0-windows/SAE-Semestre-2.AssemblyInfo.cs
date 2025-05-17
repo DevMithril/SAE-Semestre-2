@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SAE-Semestre-2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ccbaab41ba02832d9c8daec8c030aaf106e92b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07d734462941787c01eb6fd62da6a74889799243")]
 [assembly: System.Reflection.AssemblyProductAttribute("SAE-Semestre-2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SAE-Semestre-2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
