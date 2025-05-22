@@ -82,8 +82,7 @@
               "RelativeToolTip": "Base de donn\u00E9es\\Correspondance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T10:48:19.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T10:48:19.943Z"
             },
             {
               "$type": "Document",
@@ -95,34 +94,31 @@
               "RelativeToolTip": "Base de donn\u00E9es\\Admin.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAmwBoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T10:46:26.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T10:46:26.572Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Station.cs",
-              "DocumentMoniker": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Station.cs",
+              "DocumentMoniker": "C:\\Users\\Utilisateur\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Station.cs",
               "RelativeDocumentMoniker": "Base de donn\u00E9es\\Station.cs",
-              "ToolTip": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Station.cs",
+              "ToolTip": "C:\\Users\\Utilisateur\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Station.cs",
               "RelativeToolTip": "Base de donn\u00E9es\\Station.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T10:40:43.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T10:40:43.546Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Ligne.cs",
-              "DocumentMoniker": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Ligne.cs",
+              "DocumentMoniker": "C:\\Users\\Utilisateur\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Ligne.cs",
               "RelativeDocumentMoniker": "Base de donn\u00E9es\\Ligne.cs",
-              "ToolTip": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Ligne.cs",
+              "ToolTip": "C:\\Users\\Utilisateur\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Ligne.cs",
               "RelativeToolTip": "Base de donn\u00E9es\\Ligne.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T10:40:03.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T10:40:03.24Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "SAE-Semestre-2\\FormItineraire.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:44:46.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T05:44:46.277Z"
             },
             {
               "$type": "Document",
@@ -161,6 +156,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T05:29:08.523Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }
