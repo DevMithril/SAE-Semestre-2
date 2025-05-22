@@ -66,9 +66,14 @@ namespace SAE_Semestre_2
 
         public static void SupprimerLigne(int idLigne)
         {
-            string sql = "DELETE FROM ligne WHERE id_ligne = @id";
-            using MySqlCommand cmd = new MySqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@id", idLigne);
+            string sqlCorrespondances = "DELETE FROM correspondances WHERE id_ligne = @idLigne";
+            MySqlCommand cmd = new MySqlCommand(sqlCorrespondances, conn);
+            cmd.Parameters.AddWithValue("@idLigne", idLigne);
+            cmd.ExecuteNonQuery();
+
+            string sqlLigne = "DELETE FROM ligne WHERE id_ligne = @idLigne";
+            MySqlCommand cmd = new MySqlCommand(sqlLigne, conn);
+            cmd.Parameters.AddWithValue("@idLigne", idLigne);
             cmd.ExecuteNonQuery();
         }
 
@@ -99,44 +104,37 @@ namespace SAE_Semestre_2
 
         public static void AjouterCorrespondance(Correspondance c)
         {
-            try
-            {
-                string sql = @"INSERT INTO correspondances 
-                       (id_stationA, id_stationB, horaire_dep, horaire_arr, id_ligne) 
-                       VALUES (@idA, @idB, @dep, @arr, @idLigne)";
-                using MySqlCommand cmd = new MySqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@idA", c.StationA.IdStation);
-                cmd.Parameters.AddWithValue("@idB", c.StationB.IdStation);
-                cmd.Parameters.AddWithValue("@dep", c.HoraireDep);
-                cmd.Parameters.AddWithValue("@arr", c.HoraireArr);
-                cmd.Parameters.AddWithValue("@idLigne", c.Ligne.IdLigne);
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("Erreur AjouterCorrespondance : " + ex.Message);
-            }
+
+            string sql = @"INSERT INTO correspondances 
+                   (id_stationA, id_stationB, horaire_dep, horaire_arr, id_ligne) 
+                   VALUES (@idA, @idB, @dep, @arr, @idLigne)";
+            using MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@idA", c.StationA.IdStation);
+            cmd.Parameters.AddWithValue("@idB", c.StationB.IdStation);
+            cmd.Parameters.AddWithValue("@dep", c.HoraireDep);
+            cmd.Parameters.AddWithValue("@arr", c.HoraireArr);
+            cmd.Parameters.AddWithValue("@idLigne", c.Ligne.IdLigne);
+            cmd.ExecuteNonQuery();
         }
 
         public static void SupprimerCorrespondance(Correspondance c)
         {
-            try
-            {
-                string sql = @"DELETE FROM correspondances 
-                       WHERE id_stationA = @idA 
-                         AND id_stationB = @idB 
-                         AND horaire_dep = @dep";
-                using MySqlCommand cmd = new MySqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@idA", c.StationA.IdStation);
-                cmd.Parameters.AddWithValue("@idB", c.StationB.IdStation);
-                cmd.Parameters.AddWithValue("@dep", c.HoraireDep);
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("Erreur SupprimerCorrespondance : " + ex.Message);
-            }
+            string sql = @"DELETE FROM correspondances 
+                     WHERE id_stationA = @idA 
+                     AND id_stationB = @idB 
+                     AND horaire_dep = @dep";
+            using MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@idA", c.StationA.IdStation);
+            cmd.Parameters.AddWithValue("@idB", c.StationB.IdStation);
+            cmd.Parameters.AddWithValue("@dep", c.HoraireDep);
+            cmd.ExecuteNonQuery();
         }
+        public static void SupprimerToutesCorrespondances()
+        {
+            string sql = "DELETE FROM correspondances";
+            using MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.ExecuteNonQuery();
+         }
 
         public static List<Ligne> LectureLignes()
         {
