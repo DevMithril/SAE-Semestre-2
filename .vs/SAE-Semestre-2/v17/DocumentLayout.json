@@ -1,10 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\",
+  "WorkspaceRootPath": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\nsitb\\source\\repos\\sae-semestre-2\\sae-semestre-2\\formmodifierligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formmodifierligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SAE-Semestre-2\\FormModifierLigne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\sae-semestre-2\\formconsultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sae-semestre-2\\formconsultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\sae-semestre-2\\formmodifierstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sae-semestre-2\\formmodifierstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Correspondance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Base de donn\u00E9es\\Correspondance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Base de donn\u00E9es\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Base de donn\u00E9es\\Station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Ligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Base de donn\u00E9es\\Ligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormItineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SAE-Semestre-2\\FormItineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\BD.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SAE-Semestre-2\\BD.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SAE-Semestre-2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +50,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -30,18 +86,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
@@ -50,15 +94,125 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormModifierLigne.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs",
-              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormModifierLigne.cs",
-              "ToolTip": "C:\\Users\\nsitb\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs [Conception]",
-              "RelativeToolTip": "SAE-Semestre-2\\FormModifierLigne.cs [Conception]",
+              "DocumentIndex": 1,
+              "Title": "FormConsultation.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormConsultation.cs",
+              "ToolTip": "C:\\Users\\Utilisateur\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs [Conception]",
+              "RelativeToolTip": "..\\..\\..\\..\\Utilisateur\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T11:07:49.624Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-05-22T07:14:41.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormModifierLigne.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormModifierLigne.cs",
+              "ToolTip": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs [Design]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormModifierLigne.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T06:36:36.836Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormModifierStation.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierStation.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormModifierStation.cs",
+              "ToolTip": "C:\\Users\\Utilisateur\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierStation.cs [Conception]",
+              "RelativeToolTip": "..\\..\\..\\..\\Utilisateur\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierStation.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T06:36:16.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Correspondance.cs",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Correspondance.cs",
+              "RelativeDocumentMoniker": "Base de donn\u00E9es\\Correspondance.cs",
+              "ToolTip": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Correspondance.cs",
+              "RelativeToolTip": "Base de donn\u00E9es\\Correspondance.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T10:48:19.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Admin.cs",
+              "RelativeDocumentMoniker": "Base de donn\u00E9es\\Admin.cs",
+              "ToolTip": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Admin.cs",
+              "RelativeToolTip": "Base de donn\u00E9es\\Admin.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA4wBoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T10:46:26.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Station.cs",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Station.cs",
+              "RelativeDocumentMoniker": "Base de donn\u00E9es\\Station.cs",
+              "ToolTip": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Station.cs",
+              "RelativeToolTip": "Base de donn\u00E9es\\Station.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T10:40:43.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ligne.cs",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Ligne.cs",
+              "RelativeDocumentMoniker": "Base de donn\u00E9es\\Ligne.cs",
+              "ToolTip": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\Base de donn\u00E9es\\Ligne.cs",
+              "RelativeToolTip": "Base de donn\u00E9es\\Ligne.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T10:40:03.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormItineraire.cs",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormItineraire.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormItineraire.cs",
+              "ToolTip": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\FormItineraire.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\FormItineraire.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:44:46.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BD.cs",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\BD.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\BD.cs",
+              "ToolTip": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\BD.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\BD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:29:08.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\Program.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\Program.cs",
+              "ToolTip": "C:\\Users\\alixg\\source\\repos\\SAE-Semestre-2\\SAE-Semestre-2\\Program.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:41:48.259Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }

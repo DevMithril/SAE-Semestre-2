@@ -6,5 +6,10 @@ namespace SAE_Semestre_2
         {
             InitializeComponent();
         }
+
+        private void FormItineraire_Load(object sender, EventArgs e)
+        {
+            BD.connexion();
+        }
     }
 }
