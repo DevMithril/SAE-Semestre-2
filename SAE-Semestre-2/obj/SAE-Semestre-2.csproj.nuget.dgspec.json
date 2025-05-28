@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\SAE-Semestre-2.csproj": {}
+    "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\SAE-Semestre-2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj": {
+    "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj",
+        "projectUniqueName": "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj",
         "projectName": "Base_de_données",
-        "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj",
-        "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\obj\\",
+        "projectPath": "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj",
+        "packagesPath": "C:\\Users\\nsitb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nsitb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -66,24 +66,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\SAE-Semestre-2.csproj": {
+    "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\SAE-Semestre-2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\SAE-Semestre-2.csproj",
+        "projectUniqueName": "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\SAE-Semestre-2.csproj",
         "projectName": "SAE-Semestre-2",
-        "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\SAE-Semestre-2.csproj",
-        "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\obj\\",
+        "projectPath": "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\SAE-Semestre-2.csproj",
+        "packagesPath": "C:\\Users\\nsitb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\SAE-Semestre-2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nsitb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -99,8 +99,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj": {
-                "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj"
+              "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj": {
+                "projectPath": "C:\\Users\\nsitb\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj"
               }
             }
           }
@@ -115,7 +115,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -139,7 +139,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

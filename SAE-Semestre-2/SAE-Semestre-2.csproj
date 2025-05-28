@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\Desktop\nul_ne_pas_ouvrir\S2\IHM\MySql.Data.dll</HintPath>
+      <HintPath>..\MySql.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
 

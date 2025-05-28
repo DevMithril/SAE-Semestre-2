@@ -53,3 +53,14 @@ C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0
 C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\ref\SAE-Semestre-2.dll
 C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\bin\Debug\net8.0-windows\Base_de_données.dll
 C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\bin\Debug\net8.0-windows\Base_de_données.pdb
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.csproj.AssemblyReference.cache
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormAjouterLigne.resources
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormAjouterStation.resources
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormModifierLigne.resources
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormModifierStation.resources
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormSupprimerLigne.resources
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormSupprimerStation.resources
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\bin\Debug\net8.0-windows\Base_de_données.dll
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\bin\Debug\net8.0-windows\Base_de_données.pdb
+C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Seme.A243498D.Up2Date
