@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v8.0": {
       "SAE-Semestre-2/1.0.0": {
         "dependencies": {
+          "Base_de_données": "1.0.0",
           "MySql.Data": "6.10.9.0"
         },
         "runtime": {
           "SAE-Semestre-2.dll": {}
+        }
+      },
+      "Base_de_données/1.0.0": {
+        "runtime": {
+          "Base_de_données.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "MySql.Data/6.10.9.0": {
@@ -26,6 +35,11 @@
   },
   "libraries": {
     "SAE-Semestre-2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Base_de_données/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

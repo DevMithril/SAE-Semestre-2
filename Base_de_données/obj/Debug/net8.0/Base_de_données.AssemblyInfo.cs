@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Base de données")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Base_de_données")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+105220b951b94dcd07154aa669a96c29a2b35034")]
-[assembly: System.Reflection.AssemblyProductAttribute("Base de données")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Base de données")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3efce45a39cd4b81e03cfd76206ab576e26c1a1b")]
+[assembly: System.Reflection.AssemblyProductAttribute("Base_de_données")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Base_de_données")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Généré par la classe MSBuild WriteCodeFragment.

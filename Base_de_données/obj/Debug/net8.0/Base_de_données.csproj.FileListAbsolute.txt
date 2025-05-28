@@ -1,0 +1,12 @@
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\bin\Debug\net8.0\Base_de_données.deps.json
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\bin\Debug\net8.0\Base_de_données.dll
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\bin\Debug\net8.0\Base_de_données.pdb
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.AssemblyInfo.cs
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.sourcelink.json
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.dll
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\refint\Base_de_données.dll
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.pdb
+C:\Users\Utilisateur\Source\Repos\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\ref\Base_de_données.dll

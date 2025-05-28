@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Base de données\Base de données.csproj" />
+    <ProjectReference Include="..\Base_de_données\Base_de_données.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\alixg\\.nuget\\packages\\": {},
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alixg\\Source\\Repos\\SAE-Semestre-2\\Base de données\\Base de données.csproj",
-      "projectName": "Base de données",
-      "projectPath": "C:\\Users\\alixg\\Source\\Repos\\SAE-Semestre-2\\Base de données\\Base de données.csproj",
-      "packagesPath": "C:\\Users\\alixg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alixg\\Source\\Repos\\SAE-Semestre-2\\Base de données\\obj\\",
+      "projectUniqueName": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj",
+      "projectName": "Base_de_données",
+      "projectPath": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\Base_de_données.csproj",
+      "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Utilisateur\\Source\\Repos\\SAE-Semestre-2\\Base_de_données\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\alixg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

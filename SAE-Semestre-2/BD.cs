@@ -72,7 +72,7 @@ namespace SAE_Semestre_2
             cmd.ExecuteNonQuery();
 
             string sqlLigne = "DELETE FROM ligne WHERE id_ligne = @idLigne";
-            MySqlCommand cmd = new MySqlCommand(sqlLigne, conn);
+            cmd = new MySqlCommand(sqlLigne, conn);
             cmd.Parameters.AddWithValue("@idLigne", idLigne);
             cmd.ExecuteNonQuery();
         }
