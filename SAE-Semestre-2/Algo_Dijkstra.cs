@@ -6,11 +6,89 @@ using System.Threading.Tasks;
 
 namespace SAE_Semestre_2
 {
+    /// Classe Station 
+    ///Stocker les données d'une station.
+    /// Attributs :
+    /// - id_station : matrice d'adjacence
+    /// - nom_station : tableau des distances minimales depuis le sommet de départ
+    /// - correspondance_station : tableau des sommets déjà visités
+    class Station
+    {
+        private int id_station;
+        private string nom_station;
+        private Dictionary<int, int> correspondance_station;
+
+        // Constructeur
+        public Station(int ID, string nom, Dictionary<int, int> corresp) 
+        {
+            id_station = ID;
+            nom_station = nom;
+            correspondance_station = corresp;
+        }
+
+        // Accesseurs
+        public int Id_station { get { return id_station; } }
+        public string Nom_station { get { return nom_station; } }
+        public Dictionary<int, int> Correspondance_station { get { return correspondance_station; } }
+    }
+
+    class Matrice_de_station
+    {
+        private int[,] matrice;
+
+        public Matrice_de_station(List<Station> stations)
+        {
+            int taille = stations.Count;
+            matrice = new int[taille, taille];
+
+            // Initialisation à 0
+            for (int i = 0; i < taille; i++)
+            {
+                for (int j = 0; j < taille; j++)
+                {
+                    matrice[i, j] = 0;
+                }
+            }
+
+            // Remplir la matrice avec les correspondances
+            foreach (var station in stations)
+            {
+                int id = station.Id_station;
+                foreach (var corresp in station.Correspondance_station)
+                {
+                    int id_corresp = corresp.Key;
+                    int poids = corresp.Value;
+
+                    if (id >= 0 && id < taille && id_corresp >= 0 && id_corresp < taille)
+                    {
+                        matrice[id, id_corresp] = poids;
+                    }
+                }
+            }
+        }
+
+        // Méthode pour afficher la matrice (pour debug)
+        public void AfficherMatrice()
+        {
+            int taille = matrice.GetLength(0);
+            for (int i = 0; i < taille; i++)
+            {
+                for (int j = 0; j < taille; j++)
+                {
+                    Console.Write(matrice[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        // Accesseurs
+        public int[,] Matrice { get { return matrice; } }
+    }
 
     /// Classe Algo_Dijkstra 
     ///trouver les plus courts chemins dans un graphe non orienté.
     /// Attributs :
-    /// - matrix : matrice d'adjacence
+    /// - matrice : matrice d'adjacence
     /// - distance : tableau des distances minimales depuis le sommet de départ
     /// - visited : tableau des sommets déjà visités
     /// - previous : tableau des prédécesseurs pour reconstruire les chemins
@@ -21,7 +99,7 @@ namespace SAE_Semestre_2
     /// - AfficherChemin(int start) : affiche les distances et chemins depuis 'start'
     class Algo_Dijkstra
     {
-        private int[,] matrix;
+        private int[,] matrice;
         private int[] distance;
         private bool[] visited;
         private int[] previous;
@@ -31,8 +109,8 @@ namespace SAE_Semestre_2
         /// Paramètre d'entrée: adjacenceMatrice (d'adjacence du graphe).
         public Algo_Dijkstra(int[,] adjacenceMatrice)
         {
-            this.matrix = adjacenceMatrice;
-            this.n = matrix.GetLength(0);
+            this.matrice = adjacenceMatrice;
+            this.n = matrice.GetLength(0);
             this.distance = new int[n];
             this.visited = new bool[n];
             this.previous = new int[n];
@@ -47,9 +125,9 @@ namespace SAE_Semestre_2
 
         /// Exécute l'algorithme de Dijkstra à partir du sommet de départ.
         /// Paramètre d'entrée : start (Indice du sommet de départ).
-        public void CalculerCheminMin(int start)
+        public void CalculerCheminMin(Station start)
         {
-            distance[start] = 0;
+            distance[start.Id_station] = 0;
 
             for (int count = 0; count < n - 1; count++)
             {
@@ -59,11 +137,11 @@ namespace SAE_Semestre_2
 
                 for (int v = 0; v < n; v++)
                 {
-                    if (!visited[v] && matrix[u, v] > 0 &&
+                    if (!visited[v] && matrice[u, v] > 0 &&
                         distance[u] != int.MaxValue &&
-                        distance[u] + matrix[u, v] < distance[v])
+                        distance[u] + matrice[u, v] < distance[v])
                     {
-                        distance[v] = distance[u] + matrix[u, v];
+                        distance[v] = distance[u] + matrice[u, v];
                         previous[v] = u;
                     }
                 }
@@ -88,28 +166,28 @@ namespace SAE_Semestre_2
         /// Affiche les distances et les chemins depuis le sommet de départ.
         /// Paramètre d'entrée : start (Indice du sommet de départ).
         ///                      end (Indice du sommet d'arrivé)
-        public void AfficherChemin(int start, int end)
+        public void AfficherChemin(Station start, Station end)
         {
-            Console.WriteLine("Chemin du sommet " + start + " au sommet " + end + ":");
-            if (distance[end] == int.MaxValue)
+            Console.WriteLine("Chemin entre " + start.Nom_station + " et " + end.Nom_station + ":");
+            if (distance[end.Id_station] == int.MaxValue)
             {
                 Console.WriteLine("Pas de chemin disponible.");
                 return;
             }
-            Console.Write("Distance: " + distance[end] + "\nChemin: ");
-            PrintPath(end);
+            Console.Write("Distance: " + distance[end.Id_station] + "\nChemin: ");
+            PrintPath(end, end.Id_station);
             Console.WriteLine();
         }
         /// Affiche récursivement le chemin jusqu'au sommet j.
-        private void PrintPath(int j)
+        private void PrintPath(Station station, int j)
         {
             if (previous[j] == -1)
             {
-                Console.Write(j);
+                Console.Write(station.Nom_station);
                 return;
             }
-            PrintPath(previous[j]);
-            Console.Write(" -> " + j);
+            PrintPath(station, previous[j]);
+            Console.Write(" -> " + station.Nom_station);
         }
     }
 }
