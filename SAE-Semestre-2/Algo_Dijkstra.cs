@@ -28,10 +28,10 @@ namespace SAE_Semestre_2
         private int n;
 
         /// Constructeur qui initialise la matrice et les structures internes.
-        /// Paramètre d'entrée: adjacencyMatrixMatrice (d'adjacence du graphe).
-        public Algo_Dijkstra(int[,] adjacencyMatrix)
+        /// Paramètre d'entrée: adjacenceMatrice (d'adjacence du graphe).
+        public Algo_Dijkstra(int[,] adjacenceMatrice)
         {
-            this.matrix = adjacencyMatrix;
+            this.matrix = adjacenceMatrice;
             this.n = matrix.GetLength(0);
             this.distance = new int[n];
             this.visited = new bool[n];
@@ -87,17 +87,19 @@ namespace SAE_Semestre_2
 
         /// Affiche les distances et les chemins depuis le sommet de départ.
         /// Paramètre d'entrée : start (Indice du sommet de départ).
-        public void AfficherChemin(int start)
+        ///                      end (Indice du sommet d'arrivé)
+        public void AfficherChemin(int start, int end)
         {
-            Console.WriteLine("Sommet\tDistance\tChemin");
-            for (int i = 0; i < n; i++)
+            Console.WriteLine("Chemin du sommet " + start + " au sommet " + end + ":");
+            if (distance[end] == int.MaxValue)
             {
-                Console.Write(i + "\t" + distance[i] + "\t\t");
-                PrintPath(i);
-                Console.WriteLine();
+                Console.WriteLine("Pas de chemin disponible.");
+                return;
             }
+            Console.Write("Distance: " + distance[end] + "\nChemin: ");
+            PrintPath(end);
+            Console.WriteLine();
         }
-
         /// Affiche récursivement le chemin jusqu'au sommet j.
         private void PrintPath(int j)
         {

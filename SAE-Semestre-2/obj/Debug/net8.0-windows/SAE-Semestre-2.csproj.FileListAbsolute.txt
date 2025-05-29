@@ -64,3 +64,25 @@ C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\bin\Debug\net8.0-windo
 C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\bin\Debug\net8.0-windows\MySql.Data.dll
 C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\bin\Debug\net8.0-windows\Base_de_données.pdb
 C:\Users\nsitb\Source\Repos\SAE-Semestre-2\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Seme.A243498D.Up2Date
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.csproj.AssemblyReference.cache
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormAjouter.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormAjouterLigne.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormAjouterStation.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormConnexionAdmin.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormConsultation.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormItineraire.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormModifier.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormModifierLigne.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormModifierStation.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormSupprimer.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormSupprimerLigne.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE_Semestre_2.FormSupprimerStation.resources
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.csproj.GenerateResource.cache
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.AssemblyInfoInputs.cache
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.AssemblyInfo.cs
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.csproj.CoreCompileInputs.cache
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.sourcelink.json
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.dll
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\refint\SAE-Semestre-2.dll
+C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\SAE-Semestre-2\obj\Debug\net8.0-windows\SAE-Semestre-2.pdb
