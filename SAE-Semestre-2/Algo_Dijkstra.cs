@@ -26,13 +26,6 @@ namespace SAE_Semestre_2
             correspondance_station = corresp;
         }
 
-        public Station(int ID, string nom)
-        {
-            id_station = ID;
-            nom_station = nom;
-
-        }
-
         // Accesseurs
         public int Id_station { get { return id_station; } }
         public string Nom_station { get { return nom_station; } }
