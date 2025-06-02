@@ -122,7 +122,7 @@
             btnModifStation.Name = "btnModifStation";
             btnModifStation.Size = new Size(160, 31);
             btnModifStation.TabIndex = 16;
-            btnModifStation.Text = "Modifier une station";
+            btnModifStation.Text = "Modifier une Station";
             btnModifStation.UseVisualStyleBackColor = true;
             btnModifStation.Click += btnModifStation_Click;
             // 

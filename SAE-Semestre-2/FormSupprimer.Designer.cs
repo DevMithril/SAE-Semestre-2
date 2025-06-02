@@ -109,7 +109,7 @@
             btnSupprLigne.Location = new Point(384, 219);
             btnSupprLigne.Margin = new Padding(3, 4, 3, 4);
             btnSupprLigne.Name = "btnSupprLigne";
-            btnSupprLigne.Size = new Size(160, 31);
+            btnSupprLigne.Size = new Size(175, 31);
             btnSupprLigne.TabIndex = 15;
             btnSupprLigne.Text = "Supprimer une Ligne";
             btnSupprLigne.UseVisualStyleBackColor = true;
@@ -120,9 +120,9 @@
             btnSupprStation.Location = new Point(384, 356);
             btnSupprStation.Margin = new Padding(3, 4, 3, 4);
             btnSupprStation.Name = "btnSupprStation";
-            btnSupprStation.Size = new Size(160, 31);
+            btnSupprStation.Size = new Size(175, 31);
             btnSupprStation.TabIndex = 16;
-            btnSupprStation.Text = "Supprimer une station";
+            btnSupprStation.Text = "Supprimer une Station";
             btnSupprStation.UseVisualStyleBackColor = true;
             btnSupprStation.Click += btnSupprStation_Click;
             // 

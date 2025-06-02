@@ -111,7 +111,7 @@
             btnAjouterLigne.Name = "btnAjouterLigne";
             btnAjouterLigne.Size = new Size(160, 31);
             btnAjouterLigne.TabIndex = 12;
-            btnAjouterLigne.Text = "Ajouter une ligne";
+            btnAjouterLigne.Text = "Ajouter une Ligne";
             btnAjouterLigne.UseVisualStyleBackColor = true;
             btnAjouterLigne.Click += btnAjouterLigne_Click;
             // 
