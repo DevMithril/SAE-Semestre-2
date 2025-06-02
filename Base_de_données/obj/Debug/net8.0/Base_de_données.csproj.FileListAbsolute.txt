@@ -34,3 +34,16 @@ C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\Base_de_données\obj\Debug\net
 C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\Base_de_données\obj\Debug\net8.0\refint\Base_de_données.dll
 C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\Base_de_données\obj\Debug\net8.0\Base_de_données.pdb
 C:\Users\alixg\OneDrive\Bureau\le bordel en C\SAE\Base_de_données\obj\Debug\net8.0\ref\Base_de_données.dll
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\bin\Debug\net8.0\Base_de_données.deps.json
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\bin\Debug\net8.0\Base_de_données.dll
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\bin\Debug\net8.0\Base_de_données.pdb
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.AssemblyInfoInputs.cache
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.AssemblyInfo.cs
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.csproj.CoreCompileInputs.cache
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.sourcelink.json
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.dll
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\refint\Base_de_données.dll
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.pdb
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\ref\Base_de_données.dll
+C:\Users\Come\Desktop\SAE-Semestre-2\Base_de_données\obj\Debug\net8.0\Base_de_données.csproj.AssemblyReference.cache

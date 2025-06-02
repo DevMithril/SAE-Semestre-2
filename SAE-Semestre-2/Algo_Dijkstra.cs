@@ -12,14 +12,14 @@ namespace SAE_Semestre_2
     /// - id_station : matrice d'adjacence
     /// - nom_station : tableau des distances minimales depuis le sommet de départ
     /// - correspondance_station : tableau des sommets déjà visités
-    class Station
+    class Algo_Dijkstra_Station
     {
         private int id_station;
         private string nom_station;
         private Dictionary<int, int> correspondance_station;
 
         // Constructeur
-        public Station(int ID, string nom, Dictionary<int, int> corresp) 
+        public Algo_Dijkstra_Station(int ID, string nom, Dictionary<int, int> corresp) 
         {
             id_station = ID;
             nom_station = nom;
@@ -36,7 +36,7 @@ namespace SAE_Semestre_2
     {
         private int[,] matrice;
 
-        public Matrice_de_station(List<Station> stations)
+        public Matrice_de_station(List<Algo_Dijkstra_Station> stations)
         {
             int taille = stations.Count;
             matrice = new int[taille, taille];
@@ -125,7 +125,7 @@ namespace SAE_Semestre_2
 
         /// Exécute l'algorithme de Dijkstra à partir du sommet de départ.
         /// Paramètre d'entrée : start (Indice du sommet de départ).
-        public void CalculerCheminMin(Station start)
+        public void CalculerCheminMin(Algo_Dijkstra_Station start)
         {
             distance[start.Id_station] = 0;
 
@@ -166,7 +166,7 @@ namespace SAE_Semestre_2
         /// Affiche les distances et les chemins depuis le sommet de départ.
         /// Paramètre d'entrée : start (Indice du sommet de départ).
         ///                      end (Indice du sommet d'arrivé)
-        public void AfficherChemin(Station start, Station end)
+        public void AfficherChemin(Algo_Dijkstra_Station start, Algo_Dijkstra_Station end)
         {
             Console.WriteLine("Chemin entre " + start.Nom_station + " et " + end.Nom_station + ":");
             if (distance[end.Id_station] == int.MaxValue)
@@ -179,7 +179,7 @@ namespace SAE_Semestre_2
             Console.WriteLine();
         }
         /// Affiche récursivement le chemin jusqu'au sommet j.
-        private void PrintPath(Station station, int j)
+        private void PrintPath(Algo_Dijkstra_Station station, int j)
         {
             if (previous[j] == -1)
             {
