@@ -92,52 +92,74 @@ namespace SAE_Semestre_2
                 return;
             }
 
-            List<Algo_Dijkstra_Station> graphStations = new List<Algo_Dijkstra_Station>();
+            Dictionary<(int, int), int> dureesCorrespondances = new Dictionary<(int, int), int>();
+            foreach (var c in correspondances)
+            {
+                int duree = (int)(c.HoraireArr - c.HoraireDep).TotalMinutes;
+                if (duree > 0)
+                {
+                    dureesCorrespondances[(c.StationA.IdStation, c.StationB.IdStation)] = duree;
+                    dureesCorrespondances[(c.StationB.IdStation, c.StationA.IdStation)] = duree;
+                }
+            }
 
+            Dictionary<int, int> idToIndex = new Dictionary<int, int>();
+            Dictionary<int, int> indexToId = new Dictionary<int, int>();
+            for (int i = 0; i < stations.Count; i++)
+            {
+                idToIndex[stations[i].IdStation] = i;
+                indexToId[i] = stations[i].IdStation;
+            }
+
+            List<Algo_Dijkstra_Station> graphStations = new List<Algo_Dijkstra_Station>();
             foreach (Station s in stations)
             {
                 Dictionary<int, int> voisins = new Dictionary<int, int>();
 
-                foreach (Correspondance c in correspondances)
+                foreach (var autreStation in stations)
                 {
-                    if (c.StationA.IdStation == s.IdStation)
+                    if (s.IdStation != autreStation.IdStation &&
+                        dureesCorrespondances.TryGetValue((s.IdStation, autreStation.IdStation), out int duree))
                     {
-                        int poids = (int)(c.HoraireArr - c.HoraireDep).TotalMinutes;
-                        voisins[c.StationB.IdStation] = poids;
+                        int voisinIndex = idToIndex[autreStation.IdStation];
+                        voisins[voisinIndex] = duree;
                     }
                 }
 
-                graphStations.Add(new Algo_Dijkstra_Station(s.IdStation, s.NomStation, voisins));
+                graphStations.Add(new Algo_Dijkstra_Station(idToIndex[s.IdStation], s.NomStation, voisins));
             }
 
             Matrice_de_station matrice = new Matrice_de_station(graphStations);
             Algo_Dijkstra dijkstra = new Algo_Dijkstra(matrice.Matrice);
-            Algo_Dijkstra_Station algoDepart = graphStations.First(s => s.Id_station == stationDepart.IdStation);
-            Algo_Dijkstra_Station algoArrivee = graphStations.First(s => s.Id_station == stationArrivee.IdStation);
 
+            int indexDepart = idToIndex[stationDepart.IdStation];
+            int indexArrivee = idToIndex[stationArrivee.IdStation];
+
+            Algo_Dijkstra_Station algoDepart = graphStations[indexDepart];
             dijkstra.CalculerCheminMin(algoDepart);
 
             var previous = typeof(Algo_Dijkstra)
                 .GetField("previous", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                 ?.GetValue(dijkstra) as int[];
 
-            if (previous == null || previous[stationArrivee.IdStation] == -1)
+            if (previous == null || previous[indexArrivee] == -1)
             {
                 MessageBox.Show("Aucun chemin trouvé entre les deux stations.");
                 return;
             }
 
             List<Station> cheminStations = new List<Station>();
-            int current = stationArrivee.IdStation;
-
+            int current = indexArrivee;
             while (current != -1)
             {
-                cheminStations.Insert(0, stations.First(s => s.IdStation == current));
+                int realId = indexToId[current];
+                cheminStations.Insert(0, stations.First(s => s.IdStation == realId));
                 current = previous[current];
             }
 
             int heure = (int)numHeureDepItin.Value;
             int minute = (int)numMinuteDepItin.Value;
+
             TimeSpan heureActuelle = new TimeSpan(heure, minute, 0);
 
             flpAffichageItin.Controls.Clear();
@@ -146,35 +168,37 @@ namespace SAE_Semestre_2
             {
                 Station station = cheminStations[i];
 
-                Label label = new Label();
-                label.AutoSize = true;
-                label.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-                label.ForeColor = Color.DarkBlue;
-
-                label.Text = $"{heureActuelle:hh\\:mm} - {station.NomStation}";
+                Label label = new Label
+                {
+                    AutoSize = true,
+                    Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                    ForeColor = Color.DarkBlue,
+                    Text = $"{heureActuelle:hh\\:mm} - {station.NomStation}"
+                };
                 flpAffichageItin.Controls.Add(label);
 
                 if (i < cheminStations.Count - 1)
                 {
                     var corresp = correspondances.FirstOrDefault(c =>
-                        c.StationA.IdStation == station.IdStation &&
-                        c.StationB.IdStation == cheminStations[i + 1].IdStation);
+                        (c.StationA.IdStation == station.IdStation && c.StationB.IdStation == cheminStations[i + 1].IdStation) ||
+                        (c.StationB.IdStation == station.IdStation && c.StationA.IdStation == cheminStations[i + 1].IdStation));
 
                     if (corresp != null)
                     {
                         TimeSpan duree = corresp.HoraireArr - corresp.HoraireDep;
                         heureActuelle += duree;
 
-                        Label arrow = new Label();
-                        arrow.AutoSize = true;
-                        arrow.Text = "↓";
-                        arrow.Font = new Font("Segoe UI", 14);
+                        Label arrow = new Label
+                        {
+                            AutoSize = true,
+                            Text = "->",
+                            Font = new Font("Segoe UI", 14)
+                        };
                         flpAffichageItin.Controls.Add(arrow);
                     }
                 }
             }
         }
-
     }
 }
 
