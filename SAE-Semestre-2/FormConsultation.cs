@@ -18,93 +18,60 @@ namespace SAE_Semestre_2
             InitializeComponent();
         }
 
+        // Formulaire pour consulter les horaires des stations
         private void FormConsultation_Load(object sender, EventArgs e)
         {
+            // Connexion et chargement des données depuis la base
             if (!BD.connexion())
             {
                 MessageBox.Show("Erreur de connexion à la base de données.");
                 return;
             }
-
             stations = BD.LectureStations();
             lignes = BD.LectureLignes();
             correspondances = BD.LectureCorrespondances(stations, lignes);
-
             BD.fermeture();
 
-            cbxStationConsult.Items.Clear();
-            foreach (var station in stations)
-            {
-                cbxStationConsult.Items.Add(station.NomStation);
-            }
-
-            cbxLigneConsult.Items.Clear();
+            // Remplissage des listes déroulantes (stations et lignes)
+            cbxStationConsult.Items.AddRange(stations.Select(s => s.NomStation).ToArray());
             cbxLigneConsult.Items.Add("Toutes les lignes");
-            foreach (var ligne in lignes)
-            {
-                cbxLigneConsult.Items.Add(ligne.NomLigne);
-            }
+            cbxLigneConsult.Items.AddRange(lignes.Select(l => l.NomLigne).ToArray());
             cbxLigneConsult.SelectedIndex = 0;
+            if (cbxStationConsult.Items.Count > 0) cbxStationConsult.SelectedIndex = 0;
 
-            if (cbxStationConsult.Items.Count > 0)
-            {
-                cbxStationConsult.SelectedIndex = 0;
-            }
-
+            // Configuration des boutons (visuel et activation)
             btnConsultation.Enabled = false;
             btnConsultation.BackColor = Color.DodgerBlue;
-            btnConsultation.ForeColor = Color.White;
-            btnConsultation.FlatStyle = FlatStyle.Flat;
-            btnConsultation.FlatAppearance.BorderSize = 0;
-
-            btnItineraire.Enabled = true;
-            btnItineraire.BackColor = SystemColors.Control;
-            btnItineraire.ForeColor = SystemColors.ControlText;
-            btnItineraire.FlatStyle = FlatStyle.Standard;
-
-            btnConnexionAdmin.Enabled = true;
-            btnConnexionAdmin.BackColor = SystemColors.Control;
-            btnConnexionAdmin.ForeColor = SystemColors.ControlText;
-            btnConnexionAdmin.FlatStyle = FlatStyle.Standard;
-
         }
 
         private void cbxLigneConsult_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string ligneChoisie = cbxLigneConsult.SelectedItem.ToString();
-
-            if (ligneChoisie == "Toutes les lignes")
-            {
+            // Mise à jour de la ligne sélectionnée pour filtrer
+            if (cbxLigneConsult.SelectedItem.ToString() == "Toutes les lignes")
                 ligneSelectionnee = null;
-            }
             else
-            {
-                ligneSelectionnee = lignes.FirstOrDefault(l => l.NomLigne == ligneChoisie);
-            }
+                ligneSelectionnee = lignes.FirstOrDefault(l => l.NomLigne == cbxLigneConsult.SelectedItem.ToString());
 
+            // Actualisation de la liste des horaires
             if (cbxStationConsult.SelectedItem != null)
                 cbxStationConsult_SelectedIndexChanged(sender, e);
         }
 
         private void cbxStationConsult_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Affiche les horaires selon la station et la ligne sélectionnées
             lstHorairesConsult.Items.Clear();
+            string nomStation = cbxStationConsult.SelectedItem?.ToString();
+            if (nomStation == null) return;
 
-            if (cbxStationConsult.SelectedItem == null)
-                return;
-
-            string nomStation = cbxStationConsult.SelectedItem.ToString();
             Station stationChoisie = stations.FirstOrDefault(s => s.NomStation == nomStation);
-
-            if (stationChoisie == null)
-                return;
+            if (stationChoisie == null) return;
 
             if (!BD.connexion())
             {
                 MessageBox.Show("Erreur de connexion à la base de données.");
                 return;
             }
-
             correspondances = BD.LectureCorrespondances(stations, lignes);
             BD.fermeture();
 
@@ -122,25 +89,19 @@ namespace SAE_Semestre_2
 
             foreach (var c in resultats)
             {
-                string ligneNom = c.Ligne.NomLigne;
-                string destination = c.StationB.NomStation;
-                string horaire = c.HoraireDep.ToString(@"hh\:mm");
-
-                lstHorairesConsult.Items.Add($"{horaire} → {destination} ({ligneNom})");
+                lstHorairesConsult.Items.Add($"{c.HoraireDep:hh\\:mm} → {c.StationB.NomStation} ({c.Ligne.NomLigne})");
             }
         }
 
         private void btnItineraire_Click(object sender, EventArgs e)
         {
-            FormItineraire form = new FormItineraire();
-            form.Show();
+            new FormItineraire().Show();
             this.Hide();
         }
 
         private void btnConnexionAdmin_Click(object sender, EventArgs e)
         {
-            FormConnexionAdmin form = new FormConnexionAdmin();
-            form.Show();
+            new FormConnexionAdmin().Show();
             this.Hide();
         }
     }

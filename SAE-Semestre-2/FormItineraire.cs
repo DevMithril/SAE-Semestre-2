@@ -53,6 +53,7 @@ namespace SAE_Semestre_2
             this.Hide();
         }
 
+        // méthode appelée à chaque changement dans les champs de saisie départ/arrivée
         private void InputChanged(object sender, EventArgs e)
         {
             bool departRempli = !string.IsNullOrWhiteSpace(txtDepartItin.Text);
@@ -62,11 +63,13 @@ namespace SAE_Semestre_2
             btnRechercheItin.Enabled = departRempli && arriveeRemplie;
         }
 
+        //fonction de recherche pour le bouton itinéraire
         private void btnRechercheItin_Click(object sender, EventArgs e)
         {
             string nomDepart = txtDepartItin.Text.Trim();
             string nomArrivee = txtArriveeItin.Text.Trim();
 
+            //on vérifie la connexion à la base et les champs
             if (string.IsNullOrEmpty(nomDepart) || string.IsNullOrEmpty(nomArrivee))
             {
                 MessageBox.Show("Veuillez renseigner les deux stations.");
@@ -79,6 +82,7 @@ namespace SAE_Semestre_2
                 return;
             }
 
+            //charge les données depuis la base
             stations = BD.LectureStations();
             lignes = BD.LectureLignes();
             correspondances = BD.LectureCorrespondances(stations, lignes);
@@ -93,9 +97,11 @@ namespace SAE_Semestre_2
                 return;
             }
 
+            //On crée un dictionnaire qui contient les durées des correspondances entre les stations
             Dictionary<(int, int), int> dureesCorrespondances = new Dictionary<(int, int), int>();
             foreach (var c in correspondances)
             {
+                //conversion des horaires en chaîne au format Heures:Minutes et calcul de la durée entre départ et arrivée
                 string heureDepStr = $"{c.HoraireDep.Hours}h{c.HoraireDep.Minutes:D2}";
                 string heureArrStr = $"{c.HoraireArr.Hours}h{c.HoraireArr.Minutes:D2}";
                 CalculTemps calcul = new CalculTemps(heureDepStr, heureArrStr);
@@ -108,6 +114,7 @@ namespace SAE_Semestre_2
                 }
             }
 
+            //On crée d'autres dictionnaires de correspondances entre les id de stations et les indices utilisés dans le graphe
             Dictionary<int, int> idToIndex = new Dictionary<int, int>();
             Dictionary<int, int> indexToId = new Dictionary<int, int>();
             for (int i = 0; i < stations.Count; i++)
@@ -116,7 +123,10 @@ namespace SAE_Semestre_2
                 indexToId[i] = stations[i].IdStation;
             }
 
+            //On crée un graphe sous forme d'une liste de noeuds avec les voisins et les distances
             List<Algo_Dijkstra_Station> graphStations = new List<Algo_Dijkstra_Station>();
+
+            //Fonction pour chercher les voisins avec les durées correspondantes
             foreach (Station s in stations)
             {
                 Dictionary<int, int> voisins = new Dictionary<int, int>();
@@ -134,6 +144,7 @@ namespace SAE_Semestre_2
                 graphStations.Add(new Algo_Dijkstra_Station(idToIndex[s.IdStation], s.NomStation, voisins));
             }
 
+            //On crée la matrice de distance et l'initialisation de l'algo de Dijkstra
             Matrice_de_station matrice = new Matrice_de_station(graphStations);
             Algo_Dijkstra dijkstra = new Algo_Dijkstra(matrice.Matrice);
 
@@ -147,12 +158,14 @@ namespace SAE_Semestre_2
                 .GetField("previous", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                 ?.GetValue(dijkstra) as int[];
 
+            // On vérifie si un chemin existe
             if (previous == null || previous[indexArrivee] == -1)
             {
                 MessageBox.Show("Aucun chemin trouvé entre les deux stations.");
                 return;
             }
 
+            //on reconstruit le chemin des stations à partir du tableau previous
             List<Station> cheminStations = new List<Station>();
             int current = indexArrivee;
             while (current != -1)
@@ -169,11 +182,13 @@ namespace SAE_Semestre_2
 
             flpAffichageItin.Controls.Clear();
 
+            //Boucle pour parcourir les stations du chemin afin d'afficher les étapes avec horaires de départ et d'arrivée
             for (int i = 0; i < cheminStations.Count - 1; i++)
             {
                 Station station = cheminStations[i];
                 Station prochaineStation = cheminStations[i + 1];
 
+                //Ici on recherche les correspondances possibles entre la station courante et la suivante
                 var correspondancesPossibles = correspondances
                     .Where(c =>
                         (c.StationA.IdStation == station.IdStation && c.StationB.IdStation == prochaineStation.IdStation) ||
@@ -182,6 +197,7 @@ namespace SAE_Semestre_2
                     .OrderBy(c => c.HoraireDep)
                     .ToList();
 
+                //Messages d'erreurs en cas de non résultat
                 if (correspondancesPossibles.Count == 0)
                 {
                     if (i == 0)
@@ -198,6 +214,7 @@ namespace SAE_Semestre_2
 
                 var correspondanceChoisie = correspondancesPossibles.First();
 
+                //On affiche l'heure de départ de la correspondance et la station actuelle
                 flpAffichageItin.Controls.Add(new Label
                 {
                     AutoSize = true,
@@ -206,6 +223,7 @@ namespace SAE_Semestre_2
                     Text = $"{correspondanceChoisie.HoraireDep:hh\\:mm} - {station.NomStation}"
                 });
 
+                //On affiche les horaires de départ et d'arrivée du train
                 flpAffichageItin.Controls.Add(new Label
                 {
                     Text = $"Train de {correspondanceChoisie.HoraireDep:hh\\:mm} à {correspondanceChoisie.HoraireArr:hh\\:mm}",
@@ -214,6 +232,7 @@ namespace SAE_Semestre_2
                     Font = new Font("Segoe UI", 9, FontStyle.Italic)
                 });
 
+                //Ajout d'une flèche
                 Label arrow = new Label
                 {
                     AutoSize = true,
@@ -226,6 +245,7 @@ namespace SAE_Semestre_2
                 heureActuelle = correspondanceChoisie.HoraireArr;
             }
 
+            // Affiche la dernière station avec l'heure d'arrivée finale
             Station derniereStation = cheminStations.Last();
             flpAffichageItin.Controls.Add(new Label
             {

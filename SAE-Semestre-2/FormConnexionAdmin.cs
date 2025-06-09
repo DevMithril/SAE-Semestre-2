@@ -12,19 +12,21 @@ namespace SAE_Semestre_2
         public FormConnexionAdmin()
         {
             InitializeComponent();
-
         }
 
         private void FormConnexionAdmin_Load(object sender, EventArgs e)
         {
+            // Ajout des événements pour les boutons
             btnConnexion.Click += BtnConnexion_Click;
             btnItineraire.Click += BtnItineraire_Click;
             btnConsultation.Click += BtnConsultation_Click;
+
             btnConnexion.Enabled = false;
 
             textBox1.TextChanged += Fields_TextChanged;
             textBox2.TextChanged += Fields_TextChanged;
 
+            // Mise en forme des boutons du menu
             btnConsultation.Enabled = true;
             btnConsultation.BackColor = SystemColors.Control;
             btnConsultation.ForeColor = SystemColors.ControlText;
@@ -42,11 +44,13 @@ namespace SAE_Semestre_2
             btnConnexionAdmin.FlatAppearance.BorderSize = 0;
         }
 
+        // Active le bouton de connexion si les deux champs sont remplis
         private void Fields_TextChanged(object sender, EventArgs e)
         {
             btnConnexion.Enabled = !string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text);
         }
 
+        // Ouvre le formulaire d’itinéraire
         private void BtnItineraire_Click(object sender, EventArgs e)
         {
             FormItineraire formItineraire = new FormItineraire();
@@ -54,6 +58,7 @@ namespace SAE_Semestre_2
             this.Hide();
         }
 
+        // Ouvre le formulaire de consultation
         private void BtnConsultation_Click(object sender, EventArgs e)
         {
             FormConsultation formConsultation = new FormConsultation();
@@ -61,11 +66,13 @@ namespace SAE_Semestre_2
             this.Hide();
         }
 
+        // Vérifie les identifiants et ouvre le menu administrateur
         private void BtnConnexion_Click(object sender, EventArgs e)
         {
             string login = textBox1.Text.Trim();
             string mdp = textBox2.Text.Trim();
 
+            // Vérifie que les champs ne sont pas vides
             if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(mdp))
             {
                 MessageBox.Show("Veuillez remplir les deux champs.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -78,13 +85,16 @@ namespace SAE_Semestre_2
                 return;
             }
 
+            // Récupération des administrateurs
             List<Admin> admins = BD.LectureAdmins();
             BD.fermeture();
 
+            // Vérifie si le login et mot de passe sont valides
             bool utilisateurValide = admins.Any(admin =>
                 string.Equals(admin.Login, login, StringComparison.OrdinalIgnoreCase)
                 && admin.MotDePasse == mdp);
 
+            // Si l’admin est reconnu, accès au formulaire admin
             if (utilisateurValide)
             {
                 MessageBox.Show("Connexion réussie !", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);

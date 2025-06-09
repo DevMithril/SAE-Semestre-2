@@ -10,6 +10,7 @@ namespace SAE_Semestre_2
     public partial class FormAjouterStation : Form
     {
         private List<Station> stations;
+
         private List<Station> stationsAdjacentes = new List<Station>();
 
         public FormAjouterStation()
@@ -53,7 +54,6 @@ namespace SAE_Semestre_2
 
             txtNomNouvelleStation.Text = "";
             btnEnregistrerNouvelleStation.Enabled = false;
-
             btnValiderStationAdjacente.Enabled = false;
 
             if (BD.connexion())
@@ -139,7 +139,6 @@ namespace SAE_Semestre_2
             }
 
             stationsAdjacentes.Add(selected);
-
             cbxStationAdjacente.SelectedIndex = -1;
 
             btnValiderStationAdjacente.Enabled = stationsAdjacentes.Count < 2;
@@ -160,7 +159,6 @@ namespace SAE_Semestre_2
             if (BD.connexion())
             {
                 BD.AjouterStation(nouvelleStation);
-
                 stations = BD.LectureStations();
 
                 Station stationAjoutee = stations.FirstOrDefault(s => s.NomStation.Equals(nomStation, StringComparison.OrdinalIgnoreCase));
@@ -169,7 +167,15 @@ namespace SAE_Semestre_2
                 {
                     foreach (var adj in stationsAdjacentes)
                     {
-                        BD.AjouterCorrespondance(new Correspondance(stationAjoutee, adj, TimeSpan.Zero, TimeSpan.Zero, new Ligne(1, "Noire", "Ligne par défaut")));
+                        BD.AjouterCorrespondance(
+                            new Correspondance(
+                                stationAjoutee,
+                                adj,
+                                TimeSpan.Zero,
+                                TimeSpan.Zero,
+                                new Ligne(1, "Noire", "Ligne par défaut")
+                            )
+                        );
                     }
                 }
 

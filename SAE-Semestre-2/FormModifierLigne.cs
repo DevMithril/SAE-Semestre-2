@@ -21,39 +21,21 @@ namespace SAE_Semestre_2
         private void FormModifierLigne_Load(object sender, EventArgs e)
         {
             btnConsultation.Enabled = true;
-            btnConsultation.BackColor = SystemColors.Control;
-            btnConsultation.ForeColor = SystemColors.ControlText;
-            btnConsultation.FlatStyle = FlatStyle.Standard;
-
             btnItineraire.Enabled = true;
-            btnItineraire.BackColor = SystemColors.Control;
-            btnItineraire.ForeColor = SystemColors.ControlText;
-            btnItineraire.FlatStyle = FlatStyle.Standard;
-
             btnConnexionAdmin.Enabled = false;
-            btnConnexionAdmin.BackColor = Color.DodgerBlue;
-            btnConnexionAdmin.ForeColor = Color.White;
-            btnConnexionAdmin.FlatStyle = FlatStyle.Flat;
-            btnConnexionAdmin.FlatAppearance.BorderSize = 0;
-
             btnModifier.Enabled = false;
-            btnModifier.BackColor = Color.DodgerBlue;
-            btnModifier.ForeColor = Color.White;
-            btnModifier.FlatStyle = FlatStyle.Flat;
-            btnModifier.FlatAppearance.BorderSize = 0;
-
             btnAjouter.Enabled = true;
-            btnAjouter.BackColor = SystemColors.Control;
-            btnAjouter.ForeColor = SystemColors.ControlText;
-            btnAjouter.FlatStyle = FlatStyle.Standard;
-
             btnSupprimer.Enabled = true;
-            btnSupprimer.BackColor = SystemColors.Control;
-            btnSupprimer.ForeColor = SystemColors.ControlText;
-            btnSupprimer.FlatStyle = FlatStyle.Standard;
+
+            btnConsultation.FlatStyle = btnItineraire.FlatStyle =
+                btnAjouter.FlatStyle = btnSupprimer.FlatStyle = FlatStyle.Standard;
+
+            btnConnexionAdmin.BackColor = btnModifier.BackColor = Color.DodgerBlue;
+            btnConnexionAdmin.ForeColor = btnModifier.ForeColor = Color.White;
+            btnConnexionAdmin.FlatStyle = btnModifier.FlatStyle = FlatStyle.Flat;
+            btnConnexionAdmin.FlatAppearance.BorderSize = btnModifier.FlatAppearance.BorderSize = 0;
 
             BD.connexion();
-
             lignes = BD.LectureLignes();
             stations = BD.LectureStations();
             correspondances = BD.LectureCorrespondances(stations, lignes);
@@ -70,43 +52,19 @@ namespace SAE_Semestre_2
 
             cbxNomLigne.SelectedIndexChanged += cbxNomLigne_SelectedIndexChanged;
             cbxNomStation.SelectedIndexChanged += cbxNomStation_SelectedIndexChanged;
-
             txtNouvelleCouleurLigne.TextChanged += ChampsModifies;
         }
 
-        private void btnItineraire_Click(object sender, EventArgs e)
-        {
-            new FormItineraire().Show();
-            Close();
-        }
+        private void btnItineraire_Click(object sender, EventArgs e) => OuvrirForm(new FormItineraire());
+        private void btnConsultation_Click(object sender, EventArgs e) => OuvrirForm(new FormConsultation());
+        private void btnConnexionAdmin_Click(object sender, EventArgs e) => OuvrirForm(new FormConnexionAdmin());
+        private void btnAjouter_Click(object sender, EventArgs e) => OuvrirForm(new FormAjouter());
+        private void btnModifier_Click(object sender, EventArgs e) => OuvrirForm(new FormModifier());
+        private void btnSupprimer_Click(object sender, EventArgs e) => OuvrirForm(new FormSupprimer());
 
-        private void btnConsultation_Click(object sender, EventArgs e)
+        private void OuvrirForm(Form form)
         {
-            new FormConsultation().Show();
-            Close();
-        }
-
-        private void btnConnexionAdmin_Click(object sender, EventArgs e)
-        {
-            new FormConnexionAdmin().Show();
-            Close();
-        }
-
-        private void btnAjouter_Click(object sender, EventArgs e)
-        {
-            new FormAjouter().Show();
-            Close();
-        }
-
-        private void btnModifier_Click(object sender, EventArgs e)
-        {
-            new FormModifier().Show();
-            Close();
-        }
-
-        private void btnSupprimer_Click(object sender, EventArgs e)
-        {
-            new FormSupprimer().Show();
+            form.Show();
             Close();
         }
 
@@ -116,7 +74,6 @@ namespace SAE_Semestre_2
             {
                 txtNouvelleCouleurLigne.Text = ligne.CouleurLigne;
             }
-
             VerifierActivationBouton();
         }
 
@@ -133,18 +90,13 @@ namespace SAE_Semestre_2
                     .OrderBy(h => h);
 
                 foreach (var h in horaires)
-                {
                     lstHorairesStationLigne.Items.Add(h.ToString(@"hh\:mm"));
-                }
             }
 
             VerifierActivationBouton();
         }
 
-        private void ChampsModifies(object sender, EventArgs e)
-        {
-            VerifierActivationBouton();
-        }
+        private void ChampsModifies(object sender, EventArgs e) => VerifierActivationBouton();
 
         private void VerifierActivationBouton()
         {
@@ -161,7 +113,7 @@ namespace SAE_Semestre_2
                 string nouvelleCouleur = txtNouvelleCouleurLigne.Text.Trim();
                 if (!string.IsNullOrEmpty(nouvelleCouleur))
                 {
-                    Ligne ligneModifiee = new Ligne(ligneSelectionnee.IdLigne, nouvelleCouleur, ligneSelectionnee.NomLigne);
+                    var ligneModifiee = new Ligne(ligneSelectionnee.IdLigne, nouvelleCouleur, ligneSelectionnee.NomLigne);
                     try
                     {
                         BD.ModifierLigne(ligneModifiee);

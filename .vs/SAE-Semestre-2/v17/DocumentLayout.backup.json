@@ -3,12 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formmodifierstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formmodifierstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formitineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formitineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formmodifierstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formmodifierstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formitineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formitineraire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formconnexionadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formconnexionadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formconnexionadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formconnexionadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formconsultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formconsultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formconsultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formconsultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formajouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formajouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formajouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formajouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formajouterligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formajouterligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formajouterligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formajouterligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formajouterstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formajouterstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formajouterstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formajouterstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formmodifierligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formmodifierligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|c:\\users\\come\\desktop\\sae-semestre-2\\sae-semestre-2\\formmodifierligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A01F43B-78B0-4919-B32D-0CC23154B56D}|SAE-Semestre-2\\SAE-Semestre-2.csproj|solutionrelative:sae-semestre-2\\formmodifierligne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,26 +115,176 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormModifierStation.cs",
-              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierStation.cs",
-              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormModifierStation.cs",
-              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierStation.cs",
-              "RelativeToolTip": "SAE-Semestre-2\\FormModifierStation.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Title": "FormItineraire.cs",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormItineraire.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormItineraire.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormItineraire.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\FormItineraire.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDAAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T16:20:30.355Z",
+              "WhenOpened": "2025-06-09T16:54:09.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormModifierStation.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierStation.cs",
-              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormModifierStation.cs",
-              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierStation.cs [Conception]",
-              "RelativeToolTip": "SAE-Semestre-2\\FormModifierStation.cs [Conception]",
+              "Title": "FormItineraire.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormItineraire.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormItineraire.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormItineraire.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormItineraire.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T16:20:29.237Z",
+              "WhenOpened": "2025-06-09T16:54:08.127Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormConsultation.cs",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormConsultation.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\FormConsultation.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAApwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:51:58.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormConsultation.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormConsultation.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormConsultation.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormConsultation.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:51:56.828Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormConnexionAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormConnexionAdmin.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormConnexionAdmin.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormConnexionAdmin.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\FormConnexionAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:51:44.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormConnexionAdmin.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormConnexionAdmin.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormConnexionAdmin.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormConnexionAdmin.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormConnexionAdmin.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:51:43.221Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormAjouter.cs",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouter.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormAjouter.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouter.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\FormAjouter.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAwwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:51:00.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormAjouter.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouter.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormAjouter.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouter.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormAjouter.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:50:58.865Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormAjouterLigne.cs",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouterLigne.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormAjouterLigne.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouterLigne.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\FormAjouterLigne.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAEwKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:50:13.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormAjouterLigne.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouterLigne.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormAjouterLigne.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouterLigne.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormAjouterLigne.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:50:12.554Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormAjouterStation.cs",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouterStation.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormAjouterStation.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouterStation.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\FormAjouterStation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:49:28.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormAjouterStation.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouterStation.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormAjouterStation.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormAjouterStation.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormAjouterStation.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:49:27.066Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormModifierLigne.cs",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormModifierLigne.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs",
+              "RelativeToolTip": "SAE-Semestre-2\\FormModifierLigne.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAuwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:48:20.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormModifierLigne.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs",
+              "RelativeDocumentMoniker": "SAE-Semestre-2\\FormModifierLigne.cs",
+              "ToolTip": "C:\\Users\\Come\\Desktop\\SAE-Semestre-2\\SAE-Semestre-2\\FormModifierLigne.cs [Conception]",
+              "RelativeToolTip": "SAE-Semestre-2\\FormModifierLigne.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T16:48:18.888Z",
               "EditorCaption": " [Conception]"
             }
           ]

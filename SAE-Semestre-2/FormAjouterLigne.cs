@@ -73,7 +73,6 @@ namespace SAE_Semestre_2
 
             cbxNomStationNouvelleLigne.SelectedIndexChanged += CbxNomStationNouvelleLigne_SelectedIndexChanged;
             cbxNomStationNouvelleLigne.SelectedIndexChanged += Champs_TextChanged;
-
             txtNomNouvelleLigne.TextChanged += Champs_TextChanged;
             txtCouleurNouvelleLigne.TextChanged += Champs_TextChanged;
         }
@@ -170,6 +169,7 @@ namespace SAE_Semestre_2
             {
                 BD.AjouterLigne(nouvelleLigne);
                 MessageBox.Show("Ligne ajoutée avec succès.", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 txtNomNouvelleLigne.Clear();
                 txtCouleurNouvelleLigne.Clear();
                 cbxNomStationNouvelleLigne.SelectedIndex = -1;

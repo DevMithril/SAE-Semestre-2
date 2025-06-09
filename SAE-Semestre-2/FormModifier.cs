@@ -17,17 +17,12 @@ namespace SAE_Semestre_2
             InitializeComponent();
         }
 
+        // Formulaire de modification - gestion des boutons de navigation et état visuel
         private void FormModifier_Load(object sender, EventArgs e)
         {
-            btnConsultation.Enabled = true;
-            btnConsultation.BackColor = SystemColors.Control;
-            btnConsultation.ForeColor = SystemColors.ControlText;
-            btnConsultation.FlatStyle = FlatStyle.Standard;
-
-            btnItineraire.Enabled = true;
-            btnItineraire.BackColor = SystemColors.Control;
-            btnItineraire.ForeColor = SystemColors.ControlText;
-            btnItineraire.FlatStyle = FlatStyle.Standard;
+            // Configuration des boutons (activation, couleurs)
+            btnConsultation.Enabled = true; btnConsultation.FlatStyle = FlatStyle.Standard;
+            btnItineraire.Enabled = true; btnItineraire.FlatStyle = FlatStyle.Standard;
 
             btnConnexionAdmin.Enabled = false;
             btnConnexionAdmin.BackColor = Color.DodgerBlue;
@@ -41,70 +36,56 @@ namespace SAE_Semestre_2
             btnModifier.FlatStyle = FlatStyle.Flat;
             btnModifier.FlatAppearance.BorderSize = 0;
 
-            btnAjouter.Enabled = true;
-            btnAjouter.BackColor = SystemColors.Control;
-            btnAjouter.ForeColor = SystemColors.ControlText;
-            btnAjouter.FlatStyle = FlatStyle.Standard;
-
-            btnSupprimer.Enabled = true;
-            btnSupprimer.BackColor = SystemColors.Control;
-            btnSupprimer.ForeColor = SystemColors.ControlText;
-            btnSupprimer.FlatStyle = FlatStyle.Standard;
+            btnAjouter.Enabled = true; btnAjouter.FlatStyle = FlatStyle.Standard;
+            btnSupprimer.Enabled = true; btnSupprimer.FlatStyle = FlatStyle.Standard;
         }
 
+        // Navigation vers les autres formulaires
         private void btnItineraire_Click(object sender, EventArgs e)
         {
-            FormItineraire itineraire = new FormItineraire();
-            itineraire.Show();
+            new FormItineraire().Show();
             Close();
         }
 
         private void btnConsultation_Click(object sender, EventArgs e)
         {
-            FormConsultation consultation = new FormConsultation();
-            consultation.Show();
+            new FormConsultation().Show();
             Close();
         }
 
         private void btnConnexionAdmin_Click(object sender, EventArgs e)
         {
-            FormConnexionAdmin admin = new FormConnexionAdmin();
-            admin.Show();
+            new FormConnexionAdmin().Show();
             Close();
         }
 
         private void btnModifLigne_Click(object sender, EventArgs e)
         {
-            FormModifierLigne modifierLigne = new FormModifierLigne();
-            modifierLigne.Show();
+            new FormModifierLigne().Show();
             Close();
         }
 
         private void btnModifStation_Click(object sender, EventArgs e)
         {
-            FormModifierStation modifierStation = new FormModifierStation();
-            modifierStation.Show();
+            new FormModifierStation().Show();
             Close();
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            FormAjouter ajouter = new FormAjouter();
-            ajouter.Show();
+            new FormAjouter().Show();
             Close();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            FormModifier modifier = new FormModifier();
-            modifier.Show();
+            new FormModifier().Show();
             Close();
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            FormSupprimer supprimer = new FormSupprimer();
-            supprimer.Show();
+            new FormSupprimer().Show();
             Close();
         }
     }
