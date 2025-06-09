@@ -19,20 +19,6 @@ namespace SAE_Semestre_2
             btnRechercheItin.Enabled = false;
         }
 
-        private void btnConsultation_Click(object sender, EventArgs e)
-        {
-            FormConsultation formConsultation = new FormConsultation();
-            formConsultation.Show();
-            this.Hide();
-        }
-
-        private void btnConnexionAdmin_Click(object sender, EventArgs e)
-        {
-            FormConnexionAdmin formConnexionAdmin = new FormConnexionAdmin();
-            formConnexionAdmin.Show();
-            this.Hide();
-        }
-
         private void FormItineraire_Load(object sender, EventArgs e)
         {
             BD.connexion();
@@ -53,10 +39,25 @@ namespace SAE_Semestre_2
             btnConnexionAdmin.FlatStyle = FlatStyle.Standard;
         }
 
+        private void btnConsultation_Click(object sender, EventArgs e)
+        {
+            FormConsultation formConsultation = new FormConsultation();
+            formConsultation.Show();
+            this.Hide();
+        }
+
+        private void btnConnexionAdmin_Click(object sender, EventArgs e)
+        {
+            FormConnexionAdmin formConnexionAdmin = new FormConnexionAdmin();
+            formConnexionAdmin.Show();
+            this.Hide();
+        }
+
         private void InputChanged(object sender, EventArgs e)
         {
             bool departRempli = !string.IsNullOrWhiteSpace(txtDepartItin.Text);
             bool arriveeRemplie = !string.IsNullOrWhiteSpace(txtArriveeItin.Text);
+
 
             btnRechercheItin.Enabled = departRempli && arriveeRemplie;
         }
@@ -95,7 +96,11 @@ namespace SAE_Semestre_2
             Dictionary<(int, int), int> dureesCorrespondances = new Dictionary<(int, int), int>();
             foreach (var c in correspondances)
             {
-                int duree = (int)(c.HoraireArr - c.HoraireDep).TotalMinutes;
+                string heureDepStr = $"{c.HoraireDep.Hours}h{c.HoraireDep.Minutes:D2}";
+                string heureArrStr = $"{c.HoraireArr.Hours}h{c.HoraireArr.Minutes:D2}";
+                CalculTemps calcul = new CalculTemps(heureDepStr, heureArrStr);
+                int duree = calcul.CalculerDifference();
+
                 if (duree > 0)
                 {
                     dureesCorrespondances[(c.StationA.IdStation, c.StationB.IdStation)] = duree;
@@ -164,42 +169,71 @@ namespace SAE_Semestre_2
 
             flpAffichageItin.Controls.Clear();
 
-            for (int i = 0; i < cheminStations.Count; i++)
+            for (int i = 0; i < cheminStations.Count - 1; i++)
             {
                 Station station = cheminStations[i];
+                Station prochaineStation = cheminStations[i + 1];
 
-                Label label = new Label
+                var correspondancesPossibles = correspondances
+                    .Where(c =>
+                        (c.StationA.IdStation == station.IdStation && c.StationB.IdStation == prochaineStation.IdStation) ||
+                        (c.StationB.IdStation == station.IdStation && c.StationA.IdStation == prochaineStation.IdStation))
+                    .Where(c => c.HoraireDep >= heureActuelle)
+                    .OrderBy(c => c.HoraireDep)
+                    .ToList();
+
+                if (correspondancesPossibles.Count == 0)
+                {
+                    if (i == 0)
+                    {
+                        MessageBox.Show($"Aucun train ne part de {station.NomStation} vers {prochaineStation.NomStation} après {heureActuelle:hh\\:mm}. Veuillez choisir une heure plus tôt ou vérifier les horaires.");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Aucune correspondance trouvée après {heureActuelle:hh\\:mm} entre {station.NomStation} et {prochaineStation.NomStation}.");
+                    }
+                    return;
+                }
+
+
+                var correspondanceChoisie = correspondancesPossibles.First();
+
+                flpAffichageItin.Controls.Add(new Label
                 {
                     AutoSize = true,
                     Font = new Font("Segoe UI", 10, FontStyle.Bold),
                     ForeColor = Color.DarkBlue,
-                    Text = $"{heureActuelle:hh\\:mm} - {station.NomStation}"
-                };
-                flpAffichageItin.Controls.Add(label);
+                    Text = $"{correspondanceChoisie.HoraireDep:hh\\:mm} - {station.NomStation}"
+                });
 
-                if (i < cheminStations.Count - 1)
+                flpAffichageItin.Controls.Add(new Label
                 {
-                    var corresp = correspondances.FirstOrDefault(c =>
-                        (c.StationA.IdStation == station.IdStation && c.StationB.IdStation == cheminStations[i + 1].IdStation) ||
-                        (c.StationB.IdStation == station.IdStation && c.StationA.IdStation == cheminStations[i + 1].IdStation));
+                    Text = $"Train de {correspondanceChoisie.HoraireDep:hh\\:mm} à {correspondanceChoisie.HoraireArr:hh\\:mm}",
+                    AutoSize = true,
+                    ForeColor = Color.DarkGreen,
+                    Font = new Font("Segoe UI", 9, FontStyle.Italic)
+                });
 
-                    if (corresp != null)
-                    {
-                        TimeSpan duree = corresp.HoraireArr - corresp.HoraireDep;
-                        heureActuelle += duree;
+                Label arrow = new Label
+                {
+                    AutoSize = true,
+                    Text = "->",
+                    Font = new Font("Segoe UI", 14),
+                    ForeColor = Color.Gray
+                };
+                flpAffichageItin.Controls.Add(arrow);
 
-                        Label arrow = new Label
-                        {
-                            AutoSize = true,
-                            Text = "->",
-                            Font = new Font("Segoe UI", 14)
-                        };
-                        flpAffichageItin.Controls.Add(arrow);
-                    }
-                }
+                heureActuelle = correspondanceChoisie.HoraireArr;
             }
+
+            Station derniereStation = cheminStations.Last();
+            flpAffichageItin.Controls.Add(new Label
+            {
+                AutoSize = true,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                ForeColor = Color.DarkBlue,
+                Text = $"{heureActuelle:hh\\:mm} - {derniereStation.NomStation}"
+            });
         }
     }
 }
-
-

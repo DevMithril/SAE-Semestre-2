@@ -41,89 +41,105 @@
             // 
             // btnSupprimer
             // 
-            btnSupprimer.Location = new Point(450, 395);
+            btnSupprimer.Location = new Point(514, 527);
+            btnSupprimer.Margin = new Padding(3, 4, 3, 4);
             btnSupprimer.Name = "btnSupprimer";
-            btnSupprimer.Size = new Size(75, 23);
+            btnSupprimer.Size = new Size(86, 31);
             btnSupprimer.TabIndex = 19;
             btnSupprimer.Text = "Supprimer";
             btnSupprimer.UseVisualStyleBackColor = true;
+            btnSupprimer.Click += btnSupprimer_Click;
             // 
             // btnModifier
             // 
-            btnModifier.Location = new Point(368, 395);
+            btnModifier.Location = new Point(421, 527);
+            btnModifier.Margin = new Padding(3, 4, 3, 4);
             btnModifier.Name = "btnModifier";
-            btnModifier.Size = new Size(75, 23);
+            btnModifier.Size = new Size(86, 31);
             btnModifier.TabIndex = 18;
             btnModifier.Text = "Modifier";
             btnModifier.UseVisualStyleBackColor = true;
+            btnModifier.Click += btnModifier_Click;
             // 
             // btnAjouter
             // 
-            btnAjouter.Location = new Point(287, 395);
+            btnAjouter.Location = new Point(328, 527);
+            btnAjouter.Margin = new Padding(3, 4, 3, 4);
             btnAjouter.Name = "btnAjouter";
-            btnAjouter.Size = new Size(75, 23);
+            btnAjouter.Size = new Size(86, 31);
             btnAjouter.TabIndex = 17;
             btnAjouter.Text = "Ajouter";
             btnAjouter.UseVisualStyleBackColor = true;
+            btnAjouter.Click += btnAjouter_Click;
             // 
             // btnConnexionAdmin
             // 
-            btnConnexionAdmin.Location = new Point(495, 29);
+            btnConnexionAdmin.Location = new Point(566, 39);
+            btnConnexionAdmin.Margin = new Padding(3, 4, 3, 4);
             btnConnexionAdmin.Name = "btnConnexionAdmin";
-            btnConnexionAdmin.Size = new Size(170, 23);
+            btnConnexionAdmin.Size = new Size(194, 31);
             btnConnexionAdmin.TabIndex = 16;
             btnConnexionAdmin.Text = "Espace Administrateur";
             btnConnexionAdmin.UseVisualStyleBackColor = true;
+            btnConnexionAdmin.Click += btnConnexionAdmin_Click;
             // 
             // btnConsultation
             // 
-            btnConsultation.Location = new Point(319, 29);
+            btnConsultation.Location = new Point(365, 39);
+            btnConsultation.Margin = new Padding(3, 4, 3, 4);
             btnConsultation.Name = "btnConsultation";
-            btnConsultation.Size = new Size(170, 23);
+            btnConsultation.Size = new Size(194, 31);
             btnConsultation.TabIndex = 15;
             btnConsultation.Text = "Consulter les horaires";
             btnConsultation.UseVisualStyleBackColor = true;
+            btnConsultation.Click += btnConsultation_Click;
             // 
             // btnItineraire
             // 
-            btnItineraire.Location = new Point(143, 29);
+            btnItineraire.Location = new Point(163, 39);
+            btnItineraire.Margin = new Padding(3, 4, 3, 4);
             btnItineraire.Name = "btnItineraire";
-            btnItineraire.Size = new Size(170, 23);
+            btnItineraire.Size = new Size(194, 31);
             btnItineraire.TabIndex = 14;
             btnItineraire.Text = "Trouver un itinéraire";
             btnItineraire.UseVisualStyleBackColor = true;
+            btnItineraire.Click += btnItineraire_Click;
             // 
             // cbxNomLigneSuppr
             // 
             cbxNomLigneSuppr.FormattingEnabled = true;
-            cbxNomLigneSuppr.Location = new Point(342, 179);
+            cbxNomLigneSuppr.Location = new Point(391, 239);
+            cbxNomLigneSuppr.Margin = new Padding(3, 4, 3, 4);
             cbxNomLigneSuppr.Name = "cbxNomLigneSuppr";
-            cbxNomLigneSuppr.Size = new Size(121, 23);
+            cbxNomLigneSuppr.Size = new Size(138, 28);
             cbxNomLigneSuppr.TabIndex = 20;
+            cbxNomLigneSuppr.SelectedIndexChanged += cbxNomLigneSuppr_SelectedIndexChanged;
             // 
             // btnSupprimerLigne
             // 
-            btnSupprimerLigne.Location = new Point(342, 284);
+            btnSupprimerLigne.Location = new Point(391, 379);
+            btnSupprimerLigne.Margin = new Padding(3, 4, 3, 4);
             btnSupprimerLigne.Name = "btnSupprimerLigne";
-            btnSupprimerLigne.Size = new Size(121, 23);
+            btnSupprimerLigne.Size = new Size(146, 31);
             btnSupprimerLigne.TabIndex = 21;
             btnSupprimerLigne.Text = "Supprimer la ligne";
             btnSupprimerLigne.UseVisualStyleBackColor = true;
+            btnSupprimerLigne.Click += btnSupprimerLigne_Click;
             // 
             // lblNomLigneSuppr
             // 
             lblNomLigneSuppr.AutoSize = true;
-            lblNomLigneSuppr.Location = new Point(342, 161);
+            lblNomLigneSuppr.Location = new Point(391, 215);
             lblNomLigneSuppr.Name = "lblNomLigneSuppr";
-            lblNomLigneSuppr.Size = new Size(91, 15);
+            lblNomLigneSuppr.Size = new Size(116, 20);
             lblNomLigneSuppr.TabIndex = 22;
             lblNomLigneSuppr.Text = "Nom de la ligne";
             // 
             // FormSupprimerLigne
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(lblNomLigneSuppr);
             Controls.Add(btnSupprimerLigne);
             Controls.Add(cbxNomLigneSuppr);
@@ -133,8 +149,10 @@
             Controls.Add(btnConnexionAdmin);
             Controls.Add(btnConsultation);
             Controls.Add(btnItineraire);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormSupprimerLigne";
             Text = "FormSupprimerLigne";
+            Load += FormSupprimerLigne_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -41,107 +41,125 @@
             txtNouveauNomStation = new TextBox();
             SuspendLayout();
             // 
-            // btnSupprimer
-            // 
-            btnSupprimer.Location = new Point(449, 395);
-            btnSupprimer.Name = "btnSupprimer";
-            btnSupprimer.Size = new Size(75, 23);
-            btnSupprimer.TabIndex = 19;
-            btnSupprimer.Text = "Supprimer";
-            btnSupprimer.UseVisualStyleBackColor = true;
-            // 
-            // btnModifier
-            // 
-            btnModifier.Location = new Point(368, 395);
-            btnModifier.Name = "btnModifier";
-            btnModifier.Size = new Size(75, 23);
-            btnModifier.TabIndex = 18;
-            btnModifier.Text = "Modifier";
-            btnModifier.UseVisualStyleBackColor = true;
-            // 
-            // btnAjouter
-            // 
-            btnAjouter.Location = new Point(287, 395);
-            btnAjouter.Name = "btnAjouter";
-            btnAjouter.Size = new Size(75, 23);
-            btnAjouter.TabIndex = 17;
-            btnAjouter.Text = "Ajouter";
-            btnAjouter.UseVisualStyleBackColor = true;
-            // 
             // btnConnexionAdmin
             // 
-            btnConnexionAdmin.Location = new Point(495, 29);
+            btnConnexionAdmin.Location = new Point(566, 39);
+            btnConnexionAdmin.Margin = new Padding(3, 4, 3, 4);
             btnConnexionAdmin.Name = "btnConnexionAdmin";
-            btnConnexionAdmin.Size = new Size(170, 23);
-            btnConnexionAdmin.TabIndex = 16;
+            btnConnexionAdmin.Size = new Size(194, 31);
+            btnConnexionAdmin.TabIndex = 8;
             btnConnexionAdmin.Text = "Espace Administrateur";
             btnConnexionAdmin.UseVisualStyleBackColor = true;
+            btnConnexionAdmin.Click += btnConnexionAdmin_Click;
             // 
             // btnConsultation
             // 
-            btnConsultation.Location = new Point(319, 29);
+            btnConsultation.Location = new Point(365, 39);
+            btnConsultation.Margin = new Padding(3, 4, 3, 4);
             btnConsultation.Name = "btnConsultation";
-            btnConsultation.Size = new Size(170, 23);
-            btnConsultation.TabIndex = 15;
+            btnConsultation.Size = new Size(194, 31);
+            btnConsultation.TabIndex = 7;
             btnConsultation.Text = "Consulter les horaires";
             btnConsultation.UseVisualStyleBackColor = true;
+            btnConsultation.Click += btnConsultation_Click;
             // 
             // btnItineraire
             // 
-            btnItineraire.Location = new Point(143, 29);
+            btnItineraire.Location = new Point(163, 39);
+            btnItineraire.Margin = new Padding(3, 4, 3, 4);
             btnItineraire.Name = "btnItineraire";
-            btnItineraire.Size = new Size(170, 23);
-            btnItineraire.TabIndex = 14;
+            btnItineraire.Size = new Size(194, 31);
+            btnItineraire.TabIndex = 6;
             btnItineraire.Text = "Trouver un itinéraire";
             btnItineraire.UseVisualStyleBackColor = true;
+            btnItineraire.Click += btnItineraire_Click;
+            // 
+            // btnSupprimer
+            // 
+            btnSupprimer.Location = new Point(513, 527);
+            btnSupprimer.Margin = new Padding(3, 4, 3, 4);
+            btnSupprimer.Name = "btnSupprimer";
+            btnSupprimer.Size = new Size(86, 31);
+            btnSupprimer.TabIndex = 14;
+            btnSupprimer.Text = "Supprimer";
+            btnSupprimer.UseVisualStyleBackColor = true;
+            btnSupprimer.Click += btnSupprimer_Click;
+            // 
+            // btnModifier
+            // 
+            btnModifier.Location = new Point(421, 527);
+            btnModifier.Margin = new Padding(3, 4, 3, 4);
+            btnModifier.Name = "btnModifier";
+            btnModifier.Size = new Size(86, 31);
+            btnModifier.TabIndex = 13;
+            btnModifier.Text = "Modifier";
+            btnModifier.UseVisualStyleBackColor = true;
+            btnModifier.Click += btnModifier_Click;
+            // 
+            // btnAjouter
+            // 
+            btnAjouter.Location = new Point(328, 527);
+            btnAjouter.Margin = new Padding(3, 4, 3, 4);
+            btnAjouter.Name = "btnAjouter";
+            btnAjouter.Size = new Size(86, 31);
+            btnAjouter.TabIndex = 12;
+            btnAjouter.Text = "Ajouter";
+            btnAjouter.UseVisualStyleBackColor = true;
+            btnAjouter.Click += btnAjouter_Click;
             // 
             // btnRenommerStation
             // 
-            btnRenommerStation.Location = new Point(344, 320);
+            btnRenommerStation.Location = new Point(383, 427);
+            btnRenommerStation.Margin = new Padding(3, 4, 3, 4);
             btnRenommerStation.Name = "btnRenommerStation";
-            btnRenommerStation.Size = new Size(126, 23);
+            btnRenommerStation.Size = new Size(166, 31);
             btnRenommerStation.TabIndex = 20;
             btnRenommerStation.Text = "Renommer la station";
             btnRenommerStation.UseVisualStyleBackColor = true;
+            btnRenommerStation.Click += btnRenommerStation_Click;
             // 
             // lblNomStation
             // 
             lblNomStation.AutoSize = true;
-            lblNomStation.Location = new Point(264, 133);
+            lblNomStation.Location = new Point(302, 177);
             lblNomStation.Name = "lblNomStation";
-            lblNomStation.Size = new Size(136, 15);
+            lblNomStation.Size = new Size(172, 20);
             lblNomStation.TabIndex = 21;
             lblNomStation.Text = "Nom actuel de la station";
             // 
             // lblNouveauNomStation
             // 
             lblNouveauNomStation.AutoSize = true;
-            lblNouveauNomStation.Location = new Point(264, 224);
+            lblNouveauNomStation.Location = new Point(302, 299);
             lblNouveauNomStation.Name = "lblNouveauNomStation";
-            lblNouveauNomStation.Size = new Size(150, 15);
+            lblNouveauNomStation.Size = new Size(188, 20);
             lblNouveauNomStation.TabIndex = 22;
             lblNouveauNomStation.Text = "Nouveau nom de la station";
             // 
             // cbxNomStation
             // 
             cbxNomStation.FormattingEnabled = true;
-            cbxNomStation.Location = new Point(264, 151);
+            cbxNomStation.Location = new Point(302, 201);
+            cbxNomStation.Margin = new Padding(3, 4, 3, 4);
             cbxNomStation.Name = "cbxNomStation";
-            cbxNomStation.Size = new Size(292, 23);
+            cbxNomStation.Size = new Size(333, 28);
             cbxNomStation.TabIndex = 23;
+            cbxNomStation.SelectedIndexChanged += cbxNomStation_SelectedIndexChanged;
             // 
             // txtNouveauNomStation
             // 
-            txtNouveauNomStation.Location = new Point(264, 242);
+            txtNouveauNomStation.Location = new Point(302, 323);
+            txtNouveauNomStation.Margin = new Padding(3, 4, 3, 4);
             txtNouveauNomStation.Name = "txtNouveauNomStation";
-            txtNouveauNomStation.Size = new Size(292, 23);
+            txtNouveauNomStation.Size = new Size(333, 27);
             txtNouveauNomStation.TabIndex = 24;
+            txtNouveauNomStation.TextChanged += txtNouveauNomStation_TextChanged;
             // 
             // FormModifierStation
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(txtNouveauNomStation);
             Controls.Add(cbxNomStation);
             Controls.Add(lblNouveauNomStation);
@@ -153,8 +171,10 @@
             Controls.Add(btnConnexionAdmin);
             Controls.Add(btnConsultation);
             Controls.Add(btnItineraire);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormModifierStation";
             Text = "FormModifierStation";
+            Load += FormModifierStation_Load;
             ResumeLayout(false);
             PerformLayout();
         }
